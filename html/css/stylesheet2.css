@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex; /* sab content horizontally aa jayega*/
+}
+
+.nav-list{
+        width:50%;
+        display: flex;
+        align-items: center;
+       /* background-color: black;*/
+}
+.nav-list li{
+    list-style: none;/*bullets remove ho jayegi*/
+    padding: 20px 20px;
+    text-align: left;
+}
+.nav-list li a{
+    text-decoration:none; /*underlines haat jayegi home about us contact us and services ke neeche se*/
+    color: white;
+}
+.nav-list li a:hover{
+    color:peru;
+}
+.rightnav{
+    width:50%;
+    text-align: right;
+    padding: 26px 30px;
+    /*background-color: black;*/
+}
+.logo{
+    width:20%;
+    /*background-color: black;*/
+}
+.logo img{
+    width:20%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#search{
+    padding: 26px 30px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  
+  img{
+      opacity: 50%;
+      height: 50%;
+      
+  }
