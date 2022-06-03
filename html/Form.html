@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            text-align: left;
+            color: black;
+         }
+         .heading{
+             font-family: 'Courier New', Courier, monospace;
+         }
+         body{
+             background-image: url(https://blogs.biomedcentral.com/on-biology/wp-content/uploads/sites/5/2018/04/nature-3042751_1920-copy-2-620x342.jpg);
+             background-color: #EF9F9F;
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+         .navbar{
+    display: flex; /* sab content horizontally aa jayega*/
+}
+
+.nav-list{
+        width:50%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+       /* background-color: black;*/
+}
+.nav-list li{
+    list-style: none;/*bullets remove ho jayegi*/
+    padding: 10px 10px;
+    text-align: left;
+}
+.nav-list li a{
+    text-decoration:none; /*underlines haat jayegi home about us contact us and services ke neeche se*/
+    color: white;
+}
+.nav-list li a:hover{
+    color:peru;
+}
+.rightnav{
+    width:50%;
+    text-align: right;
+    padding: 26px 30px;
+    /*background-color: black;*/
+}
+.logo{
+    width:20%;
+    /*background-color: black;*/
+}
+.logo img{
+    width:50%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#search{
+    padding: 26px 30px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('..img/bg1.jpg');
+}
+</style>
+</head>
+<body class="body">
+    <nav class="navbar background" style="background-color:black;">
+        <!--A navigation bar is created here -->
+        <div class="logo"><img src="https://bfpa.org/wp-content/uploads/2020/04/logo_2019_inverse.png" style="height:90%;width:30%;" alt="logo"></div>
+        <ul class="nav-list">
+            <li><a href="http://127.0.0.1:5500/website.html">Home</a></li>
+            <!--id = home-->
+            <li><a href="http://127.0.0.1:5500/.vscode/findpet.html">Find Pet</li>
+            <li><a href="#resources">Resources</a>
+            <li><a href="http://127.0.0.1:5500/.vscode/Form.html">Adoption/Foster Form</a></li>
+            <li><a href="http://127.0.0.1:5500/.vscode/login/login.html">Log in/Sign up</a></li>
+        </ul>
+        <div class="rightnav">
+            <input type="text" placeholder="Search">
+            <button class="btn btn-sm">go!</button>
+        </div>
+    </nav>
+
+
+<div class="heading">
+    <h1 style="text-align: center; color: black;"><u>Adoption/Foster Form</u></h1> <br></div>
+    <div class="content">
+    <form action="">
+        <table cellspacing="20"> <!--table tag used to keep form items in a format-->
+            <tr>
+                <td><label>Adopt</label></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td><label>Foster</label></td>
+                <td><input type="radio"></td>
+            </tr>
+            <tr>
+                <td> <label>Name of the adopter: </label></td>
+                <td><input type="text" placeholder="First Name"> <input type="text" placeholder="Last Name"><!--placeholder jisse ki hum mention kar pae ki box mai kya fill karna h.-->
+                </td>
+            </tr>
+            <tr>
+                <td> <label>Name of the pet you wish to adopt :</label></td>
+                <td><input type="text" placeholder="Name of pet"></td>
+            </tr>
+            <tr>
+                <td> <label>Email Address :</label></td>
+                <td><input type="text" placeholder="ex:myname@example.com"></td>
+            </tr>
+            <tr>
+                <td><label>Phone Number :</label></td>
+                <td><input type="number" placeholder="Area Code"> <input type="number" placeholder="Phone Number"><br><br></td>
+            </tr>
+            <tr>
+                <td><label>Address :</label></td>
+                <td><input type="text" placeholder="Street Address"><br></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td><input type="text" placeholder="Street Address Line 2"></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td><input type="text" placeholder="City"> <input type="text" placeholder="State"></td>
+                </tr>
+                <tr>
+                <td></td>
+                <td><input type="number" placeholder="Postal/Zip Code"><br><br></td>
+                </tr>
+                </table>
+                <label>Do you agree to our terms and conditions?</label>
+                <input type="checkbox"><br><br>
+                <input type="submit">
+    </form>
+    </div>
+    
+    </body>
+</body>
+</html>

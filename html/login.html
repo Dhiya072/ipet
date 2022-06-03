@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/signup</title>
+    <style>
+*{ /* by default sab left side main chala jayega */
+    margin: 0;
+    padding:0;
+}
+.navbar{
+    display: flex; /* sab content horizontally aa jayega*/
+}
+
+.nav-list{
+        width:50%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+       /* background-color: black;*/
+}
+.nav-list li{
+    list-style: none;/*bullets remove ho jayegi*/
+    padding: 10px 10px;
+    text-align: left;
+}
+.nav-list li a{
+    text-decoration:none; /*underlines haat jayegi home about us contact us and services ke neeche se*/
+    color: white;
+}
+.nav-list li a:hover{
+    color:peru;
+}
+.rightnav{
+    width:50%;
+    text-align: right;
+    padding: 26px 30px;
+    /*background-color: black;*/
+}
+.logo{
+    width:20%;
+    /*background-color: black;*/
+}
+.logo img{
+    width:50%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#search{
+    padding: 26px 30px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('..img/bg1.jpg');
+}
+.body{
+            background-image: url(https://d2gg9evh47fn9z.cloudfront.net/1600px_COLOURBOX5784410.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+}
+
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  .div1{
+      text-align: left;
+  }
+  .div2{
+      text-align: left;
+  }
+  .btn{
+      size: 80%;
+  }
+       
+
+    </style>
+</head>
+
+    <body class="body">
+        <nav class="navbar background" style="background-color:black;">
+            <!--A navigation bar is created here -->
+            <div class="logo"><img src="https://bfpa.org/wp-content/uploads/2020/04/logo_2019_inverse.png" style="height:90%;width:30%;" alt="logo"></div>
+            <ul class="nav-list">
+                <li><a href="http://127.0.0.1:5500/website.html">Home</a></li>
+                <!--id = home-->
+                <li><a href="http://127.0.0.1:5500/.vscode/findpet.html">Find Pet</li>
+                <li><a href="#resources">Resources</a>
+                <li><a href="http://127.0.0.1:5500/.vscode/Form.html">Adoption/Foster Form</a></li>
+                <li><a href="http://127.0.0.1:5500/.vscode/login/login.html">Log in/Sign up</a></li>
+            </ul>
+            <div class="rightnav">
+                
+                <input type="text" placeholder="Search">
+                <button class="btn btn-sm">go!</button>
+            </div>
+        </nav>
+        
+        <div class="container" ></div>
+            <div class="text-block" style="text-align: center;">
+              <h2>Login/Sign up</h2><br>
+            <div class="div1">
+             Email:<br>
+             <input type="text" placeholder="myname@example.com"><br>
+            </div><br><br>
+            <div class="div2">
+                Password:<br>
+                <input type="password" placeholder="password"><br><br>
+                <input type="checkbox"><label>Remember me?</label><br><br>
+                Don't have an account?signup?
+            </div><br><br>
+            <button>Login</button>
+
+            
+            </div>
+          </div>
+
+</body>
+</html>

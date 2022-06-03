@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>findpet</title>
+    <!--<link rel="stylesheet" href="css\style.css">-->
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .navbar{
+    display: flex; /* sab content horizontally aa jayega*/
+}
+
+.nav-list{
+        width:50%;
+        display: flex;
+        align-items: center;
+        text-align: left;
+       /* background-color: black;*/
+}
+.nav-list li{
+    list-style: none;/*bullets remove ho jayegi*/
+    padding: 10px 10px;
+    text-align: left;
+}
+.nav-list li a{
+    text-decoration:none; /*underlines haat jayegi home about us contact us and services ke neeche se*/
+    color: white;
+}
+.nav-list li a:hover{
+    color:peru;
+}
+.rightnav{
+    width:50%;
+    text-align: right;
+    padding: 26px 30px;
+    /*background-color: black;*/
+}
+.logo{
+    width:20%;
+    height: 90%;
+    /*background-color: black;*/
+}
+.logo img{
+    width:50%;
+    border: 3px solid black;
+    border-radius: 50px;
+}
+#search{
+    padding: 26px 30px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('..img/bg1.jpg');
+}
+      .container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+  
+ /* img{
+      opacity: 50%;
+      height: 50%;
+      
+  }*/
+  body{
+    background-color: black;
+   /* background-image: url(https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2017_36/2148061/170908-dogs-mn-1025.jpg);*/
+   background-image: url(https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: cover;/*isse photo poora bg cover kar leti h*/
+  }
+    </style>
+</head>
+
+<body class="body">
+  <nav class="navbar background" style="background-color:black;">
+    <!--A navigation bar is created here -->
+    <div class="logo"><img src="https://bfpa.org/wp-content/uploads/2020/04/logo_2019_inverse.png" style="height:20%;width:30%;" alt="logo"></div>
+    <ul class="nav-list">
+        <li><a href="http://127.0.0.1:5500/website.html">Home</a></li>
+        <!--id = home-->
+        <li><a href="http://127.0.0.1:5500/.vscode/findpet.html">Find Pet</li>
+        <li><a href="#resources">Resources</a>
+        <li><a href="http://127.0.0.1:5500/.vscode/Form.html">Adoption/Foster Form</a></li>
+        <li><a href="http://127.0.0.1:5500/.vscode/login/login.html">Log in/Sign up</a></li>
+    </ul>
+    <div class="rightnav">
+        <input type="text" placeholder="Search">
+        <button class="btn btn-sm">go!</button>
+    </div>
+</nav>
+    <div class="container" >
+        <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_nbcnews-fp-1024-512,f_auto,q_auto:best/newscms/2017_36/2148061/170908-dogs-mn-1025.jpg" alt="dog">
+        <div class="text-block" style="text-align: center;">
+          <h2>Where would you like to search?</h2>
+          <input type="text" placeholder="City/State"> <input type="number" placeholder="Distance(in km"><br><br>
+        <button class="btn btn-sm">Find Pets!</button>
+        </div>
+      </div>
+    
+    
+</body>
+</html>
